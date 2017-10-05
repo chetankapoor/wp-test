@@ -26,7 +26,7 @@ dependencies:
     # Generate `wp-config.php` file
     - ./wp-cli.phar core config --allow-root --dbname=wordpress --dbuser=ubuntu --dbhost=localhost --path=wordpress
      
-    commands:
+commands:
     - cat wp-config.php 
 	    
     # Install WordPress
