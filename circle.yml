@@ -32,7 +32,7 @@ dependencies:
 
     # Clonse WP Pusher plugin from GitHub
     #- git clone git@github.com:petersuhm/wppusher-plugin.git wordpress/wp-content/plugins/wppusher
-    - ./wp-cli.phar plugin install wppusher --activate
+    - ./wp-cli.phar plugin install wppusher --path=wordpress --activate
 
     # And use WP-CLI to activate it
     - ./wp-cli.phar plugin activate wppusher --path=wordpress
