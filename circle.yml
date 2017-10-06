@@ -31,11 +31,11 @@ dependencies:
     - ./wp-cli.phar core install --allow-root --admin_name=admin --admin_password=admin --admin_email=admin@example.com --url=http://wppusher-plugin.dev:8080 --title=WordPress --path=wordpress
 
     # Clonse WP Pusher plugin from GitHub
-    #- git clone https://github.com/afragen/github-updater wordpress/wp-content/plugins/wppusher
+    - git clone https://github.com/afragen/github-updater wordpress/wp-content/plugins/github-updater
     #- ./wp-cli.phar plugin install wppusher --path=wordpress --activate
 
     # And use WP-CLI to activate it
-    - ./wp-cli.phar plugin activate wppusher --path=wordpress
+    - ./wp-cli.phar plugin activate github-updater --path=wordpress
 
   post:
     # Copy Apache conf into `site-available`
